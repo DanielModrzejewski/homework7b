@@ -17,12 +17,12 @@
 </head>
 
 <body class="text-center">
-<form class="form-signin">
+<form ACTION="aplikacja" METHOD="POST" class="form-signin">
     <img class="mb-4" src="fibonacci.png" alt="" >
     <h1 class="h3 mb-3 font-weight-normal">Sing in number to count fibonacci</h1>
     <label for="inputNumber" class="sr-only"></label>
-    <input type="number" id="inputNumber" class="form-control" pattern="^[0-9]" title='Only Number' min="0" step="1">
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Count fibonacci</button>
+    <input name="fibonacciNumber" type="number" id="inputNumber" class="form-control" pattern="^[0-9]" title='Only Number' min="0" step="1" required>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Count</button>
 </form>
 </body>
 </html>
